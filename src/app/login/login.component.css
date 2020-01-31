@@ -1,0 +1,10 @@
+h1{
+    color: midnightblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 65px;
+    font-style: bold;
+}
+
+input{
+    padding: 10px;
+}

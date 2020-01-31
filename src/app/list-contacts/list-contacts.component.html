@@ -1,0 +1,26 @@
+<div class="alert alert-warning" *ngIf='deleted'>{{errorMessage}}</div>
+<h1>Contacts List</h1>
+<br>
+<div class="container">
+    <button class="btn btn-danger float-right" (click)="deleteAllContacts(id)">Delete All</button>
+</div><br>
+<div class="col-md-10">
+<table class="table table-bordered table-striped">
+ <thead class = "thead-dark">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Number</th>
+    </tr>
+</thead>
+ <tbody>
+     <tr *ngFor='let c of history'>
+         <td>{{c.contactId}}</td>
+         <td>{{c.contactName}}</td>
+         <td>{{c.phNumber}}</td>
+         <td><button class="btn btn-danger" (click)="deleteContact(c)">Delete</button></td>
+         <td><button class="btn btn-success" (click)="editContact(c)">Edit</button></td>
+     </tr>
+ </tbody>
+</table>
+</div>

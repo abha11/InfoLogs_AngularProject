@@ -1,0 +1,16 @@
+h1{
+    color: maroon;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+p{
+    color: darkslategrey;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+img{
+    float: left;
+    width:100px;
+    height:100px;
+}

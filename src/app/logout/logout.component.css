@@ -1,0 +1,13 @@
+h1{
+    color: darkslategray;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+p{
+    color: black;
+    font-size: 15px;
+    font-style: initial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

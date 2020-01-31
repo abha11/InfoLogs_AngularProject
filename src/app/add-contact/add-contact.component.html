@@ -1,0 +1,17 @@
+<div class="col-md-10">
+    <h1>Add Contact</h1><br><br>
+    <div class="alert alert-success" *ngIf='added'>{{Message}}</div>
+    <form>
+      <div class="form-group">
+        <!--<label for="contactName">Name:</label>-->
+        <input type="name" [(ngModel)]="contact.contactName" placeholder="Contact Name" name="contactName" class="form-control" id="contactName">
+      </div>
+    
+      <div class="form-group">
+        <!--<label for="phNumber">Contact Number:</label>-->
+        <input [(ngModel)]="contact.phNumber" placeholder="Contact Number" name="phNumber" class="form-control" id="phNumber">
+      </div>
+      <br>
+      <button class="btn btn-success" (click)="createContact()"><b>Save</b></button>
+    </form>
+    </div>

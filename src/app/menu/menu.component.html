@@ -1,0 +1,18 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div><p>8x8</p></div>
+        <ul class="navbar-nav" id="logs">
+            <li><a *ngIf="!authenticationService.isUserLoggedIn()" routerLink="/myApp" class="nav-link">Home</a></li>
+            <li><a *ngIf="authenticationService.isUserLoggedIn()" routerLink="/welcome" class="nav-link">MyInfo</a></li>
+            <li><a *ngIf="authenticationService.isUserLoggedIn()" routerLink="/contacts" class="nav-link">Contacts</a></li>
+            <li><a *ngIf="authenticationService.isUserLoggedIn() && !authenticationService.isAdminLoggedIn()" routerLink="/addContact" class="nav-link">Add Contact</a></li>
+            <li><a *ngIf="authenticationService.isAdminLoggedIn()" routerLink="/users" class="nav-link">Users</a></li>
+        </ul>
+
+        <ul class="navbar-nav navbar-collapse justify-content-end" id="logs">
+                <li><a *ngIf="!authenticationService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+                <li><a *ngIf="!authenticationService.isUserLoggedIn()" routerLink="/signIn" class="nav-link">SignIn</a></li>
+                <li><a *ngIf="authenticationService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></li>
+        </ul>
+    </nav>
+</header>
